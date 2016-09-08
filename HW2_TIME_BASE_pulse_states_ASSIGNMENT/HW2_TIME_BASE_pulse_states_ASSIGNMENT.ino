@@ -2,8 +2,8 @@
 #include "config.h"  // pins, constants definitions
 
 //**********************************************************************
-const unsigned int R_MAX_TICKS = 5;
-const unsigned int Y_MAX_TICKS = 10;
+const unsigned int R_MAX_TICKS = 8;
+const unsigned int Y_MAX_TICKS = 15;
 
 volatile boolean isSample = false;
 boolean isRedPulse = false, isMicroPulse = false;
@@ -50,6 +50,6 @@ void initArduinoEnvironment(void)
   Serial.begin(115200);
   while (!Serial); // await comm link
   Serial.println(F("Set console line ending option to 'Carriage return'."));
-  delay(10); // complete output to console before leaving
+  //delay(10); // complete output to console before leaving
 }
 //Demo Comment
